@@ -48,3 +48,24 @@ python3 client3.py
 ## Rask 1: Interface with a stock price data feed
 Interface with a stock price data feed and set up your system for analysis of the data
 
+1. Prerequest
+run server and client 
+| Notice Type | Count |
+|:------------- |:------------- |
+|xiaxii@cecilias-mbp JPMC-tech-task-1-py3 % python3 server3.py <br>HTTP server started on port 8080 <br>Query received @ t2019-02-10 10:07:43.237974 <br>Query received @ t2019-02-11 18:12:31.763344 <br>Query received @ t2019-02-13 00:41:03.061658 <br>Query received @ t2019-02-13 19:37:03.654348 <br>Query received @ t2019-02-14 08:26:51.287677 | xiaxii@cecilias-mbp JPMC-tech-task-1-py3 % python3 client3.py <br>Quoted ABC at (bid:118.13, ask:116.63, price:118.13) <br>Quoted DEF at (bid:115.14, ask:117.87, price:115.14) <br>Ratio 1 <br>Quoted ABC at (bid:118.13, ask:116.63, price:118.13) <br>Quoted DEF at (bid:115.14, ask:117.87, price:115.14) <br>Ratio 1 <br>Quoted ABC at (bid:118.13, ask:116.63, price:118.13) <br>Quoted DEF at (bid:115.14, ask:117.87, price:115.14) <br>Ratio 1 <br>Quoted ABC at (bid:118.13, ask:116.63, price:118.13) <br>Quoted DEF at (bid:115.14, ask:117.51, price:115.14) <br>Ratio 1 <br>Quoted ABC at (bid:118.13, ask:116.63, price:118.13) <br>Quoted DEF at (bid:115.14, ask:117.51, price:115.14) <br>Ratio 1 |
+
+**Troubleshooting**: 
+AttributeError: module 'urllib' has no attribute 'urlopen'
+**Solution**: 
+import urllib.request
+urllib.request.urlopen(...)
+
+2. Objectives
+There are two incorrect things…
+(1) Ratio is always 1
+(2) The price of each stock is always the same as its bid_price.
+
+3. Making changes to client3.py
+(1) **getDataPoint**
+``` 
+
