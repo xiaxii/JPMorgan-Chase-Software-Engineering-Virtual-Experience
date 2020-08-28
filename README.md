@@ -86,11 +86,13 @@ import urllib.**request**
 urllib.**request**.urlopen(...)
 
 2. Objectives
+
 There are two incorrect things…
 (1) Ratio is always 1
 (2) The price of each stock is always the same as its bid_price.
 
 3. Making changes to client3.py
+
 (1) **getDataPoint**, change price
 ```
 	price = (bid_price + ask_price)/2.
