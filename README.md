@@ -2,7 +2,7 @@
 credit: https://www.insidesherpa.com/virtual-internships/R5iK7HMxJGBgaSbvk
 
 ---
-# Local Setup
+## Local Setup
 1. Python 2 or Python 3, My environment is: 
 
 ``` 
