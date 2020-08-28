@@ -144,7 +144,7 @@ Quoted ABC at (bid:126.12, ask:125.05, price:125.58500000000001)
 Quoted DEF at (bid:124.66, ask:125.05, price:124.85499999999999)
 Ratio 1.0058467822674304
 ```
-## Bonus Task - Unit Test
+## Bonus Task: Unit Test
 1. Pattern - **Build-Act-Assert**:
 - **Build**: We first build a simulated test scenario e.g. instantiating the dummy data we will pass in the methods we’ll test, importing the class
 whose methods we want to test, etc.
@@ -172,4 +172,36 @@ if __name__ == '__main__':
 ```
 A testcase is created by subclassing ```unittest.TestCase```. The three individual tests are defined with methods whose names start with the letters ```test```. This naming convention informs the test runner about which methods represent tests.
 
+## Patch file
+1. git
+git is a way for developers to manage code in a project especially if there’s other developers collaborating in that project too.
+
+2. git patch 
+A git patch file is just a file that you can apply to a repository to get the changes / modifications / additions another developer did on his / her machine onto your local machine. 
+This isn’t the only way to do that ofcourse but this is a viable method for a head/lead developer to check your code first before merging it into the repository’s main/master branch.
+
+3. Make a git patch file
+Fire up a terminal, enter the repository via the terminal you opened (via the cd <repo_name_here> aka change directory command) and do the following commands: (one line, one command)
+```
+git add -A
+git config user.email "<your_email_address>"
+git config user.name "<your_name>"
+git commit -m 'Create Patch File'
+git format-patch -1 HEAD
+```
+The final command, i.e. git format-patch -1 HEAD, should produce the .patch file you’d want to submit to complete this module. It will be located in the directory where you executed the command.
+
+Other Assertions: 
+self.assertIsNone()
+self.assertGreater(a, b)  ...a>b
+self.assertLess(a, b)     ...a<b
+self.assertRaises(TypeError)
+
+## Task 2: Use JPMorgan Chase frameworks and tools
+### Background
+Typically, traders monitor stock prices and trading strategies by having data displayed visually on their screens in chart form. Often these charts will be accompanied by alerts that notify users when certain events occur or when preset price thresholds are hit.
+
+JPMorgan Chase created the Perspective tool over many years to allows users to present and manipulate data feeds visually in web applications.
+
+[Perspective](https://perspective.finos.org/) provides a set of flexible data transforms, such as pivots, filters, and aggregations. It utilizes bleeding-edge browser technology such as Web Assembly and Apache Arrow and is unmatched in browser performance. It is engineered for reliability and production-vetted on the JPMorgan Chase trading floor and is now available to the development community as Open Source. Chect it out on [GitHub Page of perspective](https://github.com/finos/perspective(https://github.com/finos/perspective)
 
