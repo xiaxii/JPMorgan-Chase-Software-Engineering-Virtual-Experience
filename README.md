@@ -79,7 +79,7 @@ Quoted DEF at (bid:115.14, ask:117.51, price:115.14)
 Ratio 1
 ```
 
-**Troubleshooting**: 
+.**Troubleshooting**: 
 AttributeError: module 'urllib' has no attribute 'urlopen'
 **Solution**: 
 import urllib.**request**
@@ -203,5 +203,5 @@ Typically, traders monitor stock prices and trading strategies by having data di
 
 JPMorgan Chase created the Perspective tool over many years to allows users to present and manipulate data feeds visually in web applications.
 
-[Perspective](https://perspective.finos.org/) provides a set of flexible data transforms, such as pivots, filters, and aggregations. It utilizes bleeding-edge browser technology such as Web Assembly and Apache Arrow and is unmatched in browser performance. It is engineered for reliability and production-vetted on the JPMorgan Chase trading floor and is now available to the development community as Open Source. Chect it out on [GitHub Page of perspective](https://github.com/finos/perspective(https://github.com/finos/perspective)
+[Perspective](https://perspective.finos.org/) provides a set of flexible data transforms, such as pivots, filters, and aggregations. It utilizes bleeding-edge browser technology such as Web Assembly and Apache Arrow and is unmatched in browser performance. It is engineered for reliability and production-vetted on the JPMorgan Chase trading floor and is now available to the development community as Open Source. Chect it out on [GitHub Page](https://github.com/finos/perspective(https://github.com/finos/perspective) of perspective.
 
