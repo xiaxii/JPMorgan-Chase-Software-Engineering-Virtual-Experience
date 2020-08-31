@@ -2,7 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/JPMC/JPMC-tech-task-1-py3" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/JPMC/JPMC-tech-task-2-PY3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JPMC-tech-task-1-py3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JPMC-tech-task-2-PY3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JPMC-tech-task-3-PY3" vcs="Git" />
   </component>
 </project>
